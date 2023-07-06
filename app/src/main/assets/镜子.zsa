@@ -1,0 +1,10 @@
+弄个start、android.media.action.IMAGE_CAPTURE
+（
+、camerasensortype:i、2
+、autofocus:b、true
+、fullScreen:b、false
+、showActionIcons:b、false
+）
+、android.intent.extras.CAMERA_FACING:i、0
+。
+弄个close。

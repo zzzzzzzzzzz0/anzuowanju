@@ -1,0 +1,6 @@
+“<table border=1>”
+<tr><td>1</td><td>‘1’</td></tr>
+<tr><td>乙</td><td>‘乙’</td></tr>
+<tr><td></td><td>‘’</td></tr>
+<tr><td>&</td><td>‘&’</td></tr>
+</table>

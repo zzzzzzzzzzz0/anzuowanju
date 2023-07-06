@@ -1,0 +1,32 @@
+加载js.zs。
+下原样
+<script>
+var len_;
+function save__() {
+	var s = '';
+	for(var i = 1; i <= len_; i++) {
+		if(e__('del' + i).checked)
+			continue;
+		s += '加链“' + e__('url' + i).value + '”、“' + e__('title' + i).value + '”。\n';
+	}
+	z$.f2('弄个写文件、cang.zs、‘参数1’。弄个go_back', s);
+}
+</script>
+上原样。
+初始化链。
+加钮save__()、保存、-js-。
+横加钮“弄个go_back”、放弃。
+<br>
+“<table style='width:100%'>”。
+
+赋予数以0。
+定义加链以下代码
+	赋予数【上】【上】以算术‘数’ + 1。
+	“<tr><td>‘数’ <input type=checkbox id=del‘数’>删除<br>
+	<textarea style='width:100%' id=title‘数’>‘参数2’</textarea>
+	<textarea style='width:100%' id=url‘数’>‘参数1’</textarea></td></tr>”。
+上代码。
+加载cang.zs。
+
+</table>
+<script>len_ = ‘数’</script>。

@@ -1,0 +1,45 @@
+“<title>下载各归各</title>”。
+
+如果存在p【上】那么先
+	解释下代码
+		‘参数’<br>。
+		弄个‘参数栈’。
+	上代码、移动文件、‘p’、‘t’。
+	退出。
+了。
+
+赋予存以弄个内存目录。
+定义链接、路径、Music、文以下代码
+	“ - <a href="?p=”。
+	弄个urlencode、‘路径’。
+	“&t=”。
+	弄个urlencode、‘存’/‘Music’/。
+	“">是 ‘文’</a>”。
+上代码。
+定义断、audio、Music、之后以下代码
+	如果‘类型’正匹配‘audio’那么先
+		链接‘路径’、‘Music’、‘Music’。
+		解释‘之后’。
+		遁出。
+	了
+上代码。
+弄个遍历外目录、-代码为下代码
+	别名路径、类型以参数1、参数2。
+	‘路径’先圈子先
+		断“audio/+”、Music、下代码
+			赋予歌词以弄个改后缀、‘路径’、txt。
+			如果弄个有文件、‘歌词’那么
+				链接‘歌词’、Music、歌词。
+		上代码。
+		断“application/pdf”、Documents。
+		断“image/+”、Pictures。
+		断“video/+”、Movies。
+	了了<br>。
+上代码、-类型、
+‘存’/Download、
+‘存’/Downloads、
+‘存’/bluetooth、
+‘存’/Browser/我的收藏、
+‘存’/qqmusicpad/song、
+‘存’/Tencent/MicroMsg/Download、
+‘存’/Tencent/MicroMsg/WeiXin。

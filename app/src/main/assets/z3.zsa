@@ -1,0 +1,25 @@
+<title>‘参数0’</title>。
+加载js.zs。
+下原样
+<style>
+.item {
+	float:left;
+	padding:5px;
+}
+</style>
+<script>
+var i_ = 0;
+function add_item__() {
+	var d = new__("div");
+	d.className = "item";
+	htm__(d, ++i_);
+	add__(d, e__("list"));
+}
+</script>
+<div id=list></div>
+上原样。
+弄个毕后、分任务、下代码
+	循环10000先
+		弄个js2、add_item__()。
+	了。
+上代码。

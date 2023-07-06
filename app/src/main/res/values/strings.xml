@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">俺做玩具</string>
+    <!--string name="title_activity_main">Main</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string-->
+    <string name="zhuyi_mod">模块的修改在重启应用后才能生效</string>
+    <string name="zhuyi_code">发送短信之类的加钮一定要有引号，不然就启动直接就发了</string>
+    <string name="zhuyi_adblock">放行规则，每行一包含匹配，须杜绝空行</string>
+    <string name="home">首页</string>
+    <string name="appwidget_text">文字小部件</string>
+    <string name="label_appwidget_text">文字</string>
+</resources>

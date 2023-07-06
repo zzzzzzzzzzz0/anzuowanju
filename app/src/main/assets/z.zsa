@@ -1,0 +1,198 @@
+初始化链。
+自编辑。
+
+加钮下代码
+	提示弄个遍历外目录、-代码为下代码
+		‘参数’换行
+	上代码、先弄个内存目录了/Documents。
+上代码、遍历外目录。
+
+加钮下代码
+	弄个start、
+	SET_ALARM、、
+	（-app、com.android.deskclock、）
+	.alarm.HOUR:i、1、
+	.alarm.MINUTES:i、0、
+	.alarm.MESSAGE:s、啊、
+	.alarm.VIBRATE:b、true、
+	.alarm.SKIP_UI:b、true。
+上代码、闹钟提醒。
+
+加钮下代码
+	弄个尾匹配、12、1、2、3。
+上代码。
+
+加钮下代码
+	弄个start、send
+	、-type、image/*
+	、.STREAM:u、ic
+上代码。
+加钮下代码
+弄个start、send
+、-组件、com.tencent.mm、com.tencent.mm.ui.tools.ShareImgUI
+、-type、image/*
+、.TEXT:s、啊
+、.STREAM:u、ic
+上代码、wxfx.zsa。
+
+加钮下代码
+	弄个日历、提醒。
+上代码、日历提醒。
+赋予1以下代码
+	弄个日历、提醒、
+		先如果‘参数2’那么‘参数2’否则‘参数1’了
+			先弄个时间、m分了、
+		“于 ”先弄个时间了
+上代码。
+横加钮‘1’下代码
+	“ 始”|‘参数’|‘参数0’。
+上代码、日历提醒2、贰。
+横加钮‘1’““ 到此一游”、5分”、三。
+横加钮‘1’“、5分、10分、0”、四。
+横加钮‘1’“、10m、1h、3m、5m、9m”、五。
+横加钮‘1’“、2021-03-14-23-59-00”、六。
+
+（<pre>。
+弄个文件、/sdcard/Download/“人间不值得_画廊游记”.txt。
+解释下代码
+	<br>‘参数’
+上代码、先弄个改后缀、/sdcard/Download/“人间不值得_画廊游记”.txt、.mp3了。
+</pre>。）
+
+赋予1以西红柿炒鸡蛋。
+加钮“弄个js、-上页、e__("url").value="‘1’"。弄个close。”、url=‘1’。
+
+（INFO:CONSOLE）
+加钮下代码
+	弄个js、-上页、“
+	var e = document.querySelectorAll("video");
+	console.log(e + " " + e.length);
+	var e = document.querySelectorAll("title");
+	var i = e.length - 1;
+	if(i >= 0) console.log(e[i].innerHTML);
+	”。
+	弄个close。
+上代码、video.requestFullscreen。
+
+加钮下代码
+	赋予果以执行“ls ”。
+	提示‘果’。
+上代码。
+
+加钮下代码
+	弄个start、android.provider.MediaStore.RECORD_SOUND、
+	----、
+	下代码
+		提示‘参数栈’
+	上代码。
+上代码、一键录音。
+加钮下代码
+	弄个start、android.media.action.IMAGE_CAPTURE、
+	----、
+	下代码
+		提示‘参数栈’
+	上代码、-1、data:_data。
+上代码、一键照相。
+加钮下代码
+	弄个start、android.media.action.VIDEO_CAPTURE、
+	----、
+	下代码
+		提示‘参数栈’
+	上代码、-1、data:_data。
+上代码、一键摄像。
+
+加钮下代码
+	命名forqv。
+	赋予有、没有【私】以。
+	查变量区vdfqm、、下代码
+		如果‘参数1’等于i那么<hr>。
+		‘参数’<br>
+	上代码。
+上代码、forqv。
+
+加钮下代码
+    弄个定时、报时、下代码
+        弄个小部件、更新、。
+    上代码、1s（1m）、-重复。
+上代码。
+
+加钮下代码
+弄个主菜单、打开
+上代码。
+
+加钮下代码
+弄个test
+上代码。
+
+加钮下代码
+提示弄个迭代、下代码
+	、‘参数1’
+上代码、
+Download、
+-标签为文、Documents、
+-标签为影、Movies、
+-标签为乐、Music、
+-标签为图、Pictures。
+上代码。
+
+加钮下代码
+弄个闪屏、无休...换行无止...
+上代码。
+横加钮下代码
+弄个闪屏、去除
+上代码。
+
+加钮下代码
+	弄个start、view、
+	/storage/emulated/0/Download/5sbwzry.mp4、
+	-type、video/mp4、
+	-组件、
+	com.mxtech.videoplayer.ad、
+	com.mxtech.videoplayer.ActivityScreen（）$WebDelegate。
+上代码、mxvideoplayer。
+
+加钮“弄个打开、http://baidu.com”。
+加钮“弄个打开、market://search?q=PDF”。
+加钮“弄个打开、market://details?id=com.tencent.mobileqq”。
+
+加钮下代码
+	赋予出、错以。
+	赋予果以弄个重定向、-壳、sh、
+	pwd、“ls -la”、
+	-目录为/storage、-输出为下代码
+		赋予出【上】【上】以‘出’‘参数1’换行。
+	上代码、-错误为下代码
+		赋予错【上】【上】以‘错’‘参数1’换行。
+	上代码。
+	提示‘果’换行‘出’‘错’。
+上代码、“/storage ls -la”。
+
+加钮下代码
+	赋予以
+	循环4次先
+		如果‘次’等于2那么再来。
+		‘次’。
+		弄个迭代、下代码
+			别名第以参数1。
+			如果‘第’等于乙那么再来。
+			‘第’。
+		上代码、甲、乙、丙、丁。
+	了。
+	提示‘’。
+	再来。
+上代码、“再来”。
+
+加钮下代码
+	赋予1以甲。
+	如正匹那下代码
+		提示‘1’。
+	上代码。
+上代码。
+
+加钮下代码
+    弄个快捷方式、hello、
+    下代码
+        弄个网页、hello.zsa。
+    上代码、
+    -图标为（罗盘）aaaa。
+上代码。

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!--item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" /-->
+        <item android:title="exit" />
+        <item android:title="add or ud"  android:icon="@android:drawable/btn_star_big_on" />
+        <item android:title="add shuang" />
+        <item android:title="add no id" />
+        <item android:title="go back"    android:icon="@android:drawable/ic_media_rew" />
+        <item android:title="go forward" android:icon="@android:drawable/ic_media_ff" />
+        <item android:title="close" />
+        <item android:title="edit url" />
+        <item android:title="PgUp"       android:icon="@android:drawable/ic_media_previous" />
+        <item android:title="PgDn"       android:icon="@android:drawable/ic_media_next" />
+        <item android:title="zhuanping"  android:icon="@android:drawable/ic_menu_always_landscape_portrait"/>
+        <item android:title="adblock url" />
+        <item android:title="edit adblock" />
+    </group>
+    <!--item android:title="Page">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@android:drawable/ic_menu_compass"
+                android:title="@string/home" />
+        </menu>
+    </item-->
+
+    <!--item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item-->
+
+</menu>

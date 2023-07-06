@@ -1,0 +1,46 @@
+加载js.zs。
+初始化链。
+“<span id=s1>弄个”。
+加钮下代码
+	弄个start、view、-组件、com.android.calendar、com.android.calendar.LaunchActivity
+上代码、日历。
+“、提醒、</span><br>
+标题：<input type=text id=s2><br>
+内容：<br><textarea id=s3></textarea><br>
+开始时间：<input type=text id=tm1><br>”先
+	定义加例、id以下代码
+		“例如：”。
+		定义加-、值、名以下代码
+			横加钮e__('‘id’').value 先如果‘id’等于re那么+了 = '先如果‘id’等于re那么“、”了‘值’'、
+			先如果‘名’那么‘名’否则‘值’了、
+			-js-。
+		上代码。
+		如果‘id’等于tm1或者等于tm2那么先
+			加-先弄个时间、y-M-d-H-m-s了。
+			加-先弄个时间、y-M-d-H-m-0了、-0。
+			加-先弄个时间、y-M-d-H-0-0了、-0-0。
+			加-30秒。
+		了。
+		加-5分。
+		加-1时。
+		加-1天。
+		<br>
+	上代码。
+	加例tm1。
+了“
+结束时间：<input type=text id=tm2><br>”先加例tm2了“
+重复：<input type=text id=re><br>”先加例re了“
+<script>
+function add() {
+	var s =
+		e__("s1").innerText +
+		"下原样" + e__("s2").value + "上原样、" +
+		"下原样" + e__("s3").value + "上原样、" +
+		e__("tm1").value + "、" +
+		e__("tm2").value +
+		e__("re").value;
+	z$.f1(s);
+}
+</script>
+<input type=button value="添加" onclick="add()">”。
+

@@ -1,0 +1,38 @@
+加载js.zs。
+“<script>
+function exec(cmd) {
+	z$.f1("
+		赋予出、错以。
+		赋予果以弄个重定向、-壳、sh、
+		下原样" + cmd + "上原样、
+		、-输出为下代码
+			赋予出【上】【上】以 先得出值了 先得参数1值了 换行。
+		上代码、-错误为下代码
+			赋予错【上】【上】以 先得错值了 先得参数1值了 换行。
+		上代码。
+		弄个js、
+		htm__('exitcode', '先得果值了');
+		htm__('out', '先弄个换码、先得出值了先得错值了了')。
+	");
+}
+</script>
+<style>
+#out, #cmd {width:100%;}
+#out {height:70%;}
+</style>”。
+加标签textarea、id=cmd。
+<br>。
+定义加按、值、this【值】以下代码
+	加标签input、“type=button value="‘值’" onclick="exec(‘this’.value)"”。
+上代码。
+定义加令、值以下代码
+	加按‘值’、-。
+上代码。
+加按“运行”、e__('cmd')。<br>。
+加令 ifconfig。
+加令“ping -c 4 baidu.com”。
+加令“cat /proc/meminfo”。
+“<br>退出码：”。
+加标签span、id=exitcode。
+“<br>输出：”。
+加标签textarea、id=out。
