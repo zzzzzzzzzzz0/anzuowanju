@@ -330,16 +330,21 @@ public class Web_ {
     public WebView new__(String html, Context c) {
         return switch_.new__(html, null, root_, c);
     }
-    WebView new__(Context c) {
+    WebView new__(Context c, String url) {
         WebView wv = switch_.new__(c);
         Web_ w = new Web_(switch_, zs_, fo_, tag_, i_, dl_, ul_, opf_);
         w.ub_.base__(ub_);
         w.init__(wv);
+        if(url != null) {
+            wv.loadUrl(w.ub_.parse__(url, false, zs_, tag_));
+        }
         return wv;
     }
+    WebView new__(Context c) {
+        return new__(c, null);
+    }
     public void loadurl_new__(String url) {
-        WebView wv = new__(i_.context__());
+        new__(i_.context__(), url);
         //loadurl__(url, wv);
-        wv.loadUrl(url);
     }
 }

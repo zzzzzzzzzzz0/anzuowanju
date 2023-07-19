@@ -4,7 +4,7 @@ import android.Manifest
 import android.app.Activity
 import android.content.pm.PackageManager
 import android.os.Build.VERSION.SDK_INT
-import android.support.v4.app.ActivityCompat
+import androidx.core.app.ActivityCompat
 import java.util.ArrayList
 
 class Permi_ {

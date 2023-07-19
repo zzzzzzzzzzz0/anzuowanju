@@ -147,7 +147,8 @@ public class All_ {
     }
 
     enum Dong2_ {
-        reload_index, reload, loadurl, page_new, msgbox, loading_show_, loading_hide_, js_, view_, None
+        reload_index, reload, loadurl, page_new,
+        msgbox, loading_show_, loading_hide_, js_, view_, None
     }
 
     class SndMsg_ {
@@ -467,7 +468,10 @@ public class All_ {
                     return null;
                 case "网页":
                 case "新网页": {
-                    Dong2_ d2 = src.equals("网页") ? Dong2_.loadurl : Dong2_.page_new;
+                    Dong2_ d2 = Dong2_.loadurl;
+                    switch (src) {
+                        case "新网页": d2 = Dong2_.page_new; break;
+                    }
                     if (switch_.i__() == 0)
                         switch (d2) {
                             case loadurl:
