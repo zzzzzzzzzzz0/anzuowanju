@@ -16,11 +16,11 @@
 	弄个urlencode、‘存’/‘Music’/。
 	“">是 ‘文’</a>”。
 上代码。
-定义断、audio、Music、之后以下代码
+定义断、audio、Music、之后、漏以下代码
 	如果‘类型’正匹配‘audio’那么先
 		链接‘路径’、‘Music’、‘Music’。
 		解释‘之后’。
-		遁出。
+		如果不‘漏’那么遁出。
 	了
 上代码。
 弄个遍历外目录、-代码为下代码
@@ -34,6 +34,9 @@
 		断“application/pdf”、Documents。
 		断“image/+”、Pictures。
 		断“video/+”、Movies。
+
+		断“text/+”、Documents、、1。
+		断“text/+”、Music。
 	了了<br>。
 上代码、-类型、
 ‘存’/Download、
