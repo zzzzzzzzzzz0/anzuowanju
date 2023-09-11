@@ -331,12 +331,29 @@ public class Web_ {
         return switch_.new__(html, null, root_, c);
     }
     WebView new__(Context c, String url) {
-        WebView wv = switch_.new__(c);
         Web_ w = new Web_(switch_, zs_, fo_, tag_, i_, dl_, ul_, opf_);
         w.ub_.base__(ub_);
-        w.init__(wv);
+        String url2 = null;
         if(url != null) {
-            wv.loadUrl(w.ub_.parse__(url, false, zs_, tag_));
+            url2 = w.ub_.parse__(url, false, zs_, tag_);
+        }
+        WebView wv = null;
+        if(w.ub_.id_ != 0)
+            for(WebView wv2 : switch_.opener_.keySet()) {
+                Tag_.Ctrl_ c2 = tag_.ctrl__(wv2);
+                if(c2 != null) {
+                    if (c2.ub_.id_ == w.ub_.id_) {
+                        wv = wv2;
+                        switch_.show__(wv);
+                        break;
+                    }
+                }
+            }
+        if(wv == null)
+            wv = switch_.new__(c);
+        w.init__(wv);
+        if(url2 != null) {
+            wv.loadUrl(url2);
         }
         return wv;
     }
