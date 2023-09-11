@@ -79,18 +79,9 @@ public class Cang_ {
                 bad = true;
                 break;
             default: {
-                if(Wzs_.is_zhongjian__(url) || url.equals(Switch_.blank_)) {
+                if(Wzs_.is_zhongjian__(url) || url.equals(Switch_.blank_) || title.startsWith("http")) {
                     bad = true;
                     break;
-                }
-                if(ub.host_ != null) {
-                    int i = url.indexOf(UrlBig_.flag_head_);
-                    String url1 = i > 0 ? url.substring(0, i) : url;
-                    if(!(url1).contains(ub.host_)) {
-                            /*bad = true;
-                            break;*/
-                        System.out.println("!ub.host_" + ub.host_);
-                    }
                 }
                 int i = title.indexOf(UrlBig_.flag_head_);
                 if(i > 0) {
@@ -99,6 +90,15 @@ public class Cang_ {
                         //有可能是网页加载失败
                         bad = true;
                         break;
+                    }
+                }
+                if(ub.host_ != null) {
+                    i = url.indexOf(UrlBig_.flag_head_);
+                    String url1 = i > 0 ? url.substring(0, i) : url;
+                    if(!(url1).contains(ub.host_)) {
+                            /*bad = true;
+                            break;*/
+                        System.out.println("!ub.host_" + ub.host_);
                     }
                 }
                 break;
