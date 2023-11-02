@@ -406,7 +406,7 @@ public class All_ {
                 case "尾匹配":
                     return Regex_.ends__(a) ? new String[] {"1"} : null;
                 case "头匹配":
-                    return Regex_.ends__(a) ? new String[] {"1"} : null;
+                    return Regex_.starts__(a) ? new String[] {"1"} : null;
                 case "宽":
                     return i_.px2dip__(switch_.width__());
                 case "吐泡":
