@@ -13,6 +13,9 @@
 
 加载index1.zs。
 加载cang-new.zs。
+（加新开链看书.zsa。
+横加链听.zsa。
+横加链 mi插座.zsa?arg=2、开关灯。）
 
 加载index.3.zs。
 加载index.2.zs。
