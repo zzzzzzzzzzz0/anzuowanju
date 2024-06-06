@@ -84,6 +84,16 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/app_widget__info" />
         </receiver>
+        <receiver android:name=".clas.DeviceAdmin_"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED" />
+            </intent-filter>
+        </receiver>
         <service android:name=".clas.Service_" />
         <provider
             android:authorities="name.zzzzzzzzzzz.anzuowanju.fileprovider"

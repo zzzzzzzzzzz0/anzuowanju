@@ -3,6 +3,7 @@ package org.zhscript.clas;
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
+import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -276,4 +277,15 @@ public class Start_ {
 				throw I_.buzhichi__("-" + s);
 		}
 	}
+
+    public static void lock__(Activity c, Class<?> cls) {
+        DevicePolicyManager dpm = (DevicePolicyManager)c.getSystemService(Context.DEVICE_POLICY_SERVICE);
+        try {
+            dpm.lockNow();
+        } catch (SecurityException e) {
+            Intent i = new Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
+            i.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, new ComponentName(c, cls));
+            c.startActivityForResult(i, 1);
+        }
+    }
 }
