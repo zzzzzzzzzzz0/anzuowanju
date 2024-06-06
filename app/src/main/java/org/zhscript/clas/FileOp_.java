@@ -102,14 +102,13 @@ public abstract class FileOp_ {
         return s;
     }
 
-    public static File ext_dir__(String sub, I_ i) {
+    public static File ext_dir__(String sub, boolean can_w, I_ i) {
         if(!i.permi_.z__(Permi_.Companion.getExt_dir_(), i))
             throw I_.buliao__()/*"读写无权"*/;
         File f = Environment.getExternalStorageDirectory();
-        wai:
         for(;;) {
             if(f != null) {
-                if(f.canWrite())
+                if(!can_w || f.canWrite())
                     break;
             }
             return null;

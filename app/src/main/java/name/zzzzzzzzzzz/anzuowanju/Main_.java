@@ -116,7 +116,7 @@ public class Main_ extends AppCompatActivity implements NavigationView.OnNavigat
             }
             @Override
             public File export_dir__() {
-                File f = FileOp_.ext_dir__(app_name_ + "-export", this);
+                File f = FileOp_.ext_dir__(app_name_ + "-export", true, this);
                 if(f == null)
                     throw I_.buzhichi__("无卡？有卡无权？");
                 return f;
