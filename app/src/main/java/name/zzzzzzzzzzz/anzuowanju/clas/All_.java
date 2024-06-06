@@ -438,7 +438,9 @@ public class All_ {
                 case "遍历外目录":
                     return Dir_.for__(a, zs_, qv_up, resource);
                 case "内存目录":
-                    return new String[]{FileOp_.ext_dir__(a.length > 0 ? a[0] : "", i_).getAbsolutePath()};
+                    return new String[]{FileOp_.ext_dir__(
+                            a.length > 0 ? a[0] : "",
+                            a.length > 1 ? a[1] == "可写" : false, i_).getAbsolutePath()};
                 case "删除文件":
                     return FileOp_.del__(a, getContext(), (name) -> and__(name));
                 case "移动文件":
@@ -530,6 +532,9 @@ public class All_ {
                     }
                 case "全屏":
                     new SndMsg_(Dong2_.view_, "fs");
+                    return null;
+                case "锁屏":
+                    Start_.lock__(i_.activity__(), DeviceAdmin_.class);
                     return null;
                 case "闪屏":
                     switch (a[0]) {
