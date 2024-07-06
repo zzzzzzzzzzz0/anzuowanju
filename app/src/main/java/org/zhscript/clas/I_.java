@@ -36,7 +36,7 @@ public class I_ {
 
 	public void sendMessage__(Object o) {}
 	public void send_msg2__(int i) {}
-	public File export_dir__() {return null;}
+	public File export_dir__(boolean can_w) {return null;}
 	public void start__(int forr, Bundle b) {}
 	public void edit__(String typ, String[] a, Bundle b2) {}
 	protected int ic_launcher__() {return 0;}

@@ -9,8 +9,8 @@ android {
     defaultConfig {
         applicationId "name.zzzzzzzzzzz.anzuowanju"
         minSdk 17
-        targetSdk 30
-        versionCode 39
+        targetSdk 29
+        versionCode 40
         versionName "0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

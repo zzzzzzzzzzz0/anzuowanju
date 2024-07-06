@@ -1,7 +1,7 @@
 初始化链。加载js.zs。
 
 定义加音源【顶】、路径1、audio以下代码
-   赋予src以src="‘路径1’"。
+   赋予src以src="file://‘路径1’"。
    “<‘audio’ controls="controls" loop=loop”先分支‘audio’先
       video先“ ‘src’ width=100% height=50%”了
    了了“>
@@ -51,5 +51,8 @@ if(!e.style.display || e.style.display=='none'){
    别名路径、歌词以参数1、参数2。
    如果‘歌词’否则
       赋予歌词以弄个改后缀、‘路径’、txt。
-   加歌‘路径’、先弄个文件、‘/’‘歌词’了、‘歌词’。
+   加歌‘路径’、先
+      弄个文件、‘/’‘歌词’
+      （“<embed src="file://‘/’‘歌词’">”）
+   了、‘歌词’。
 上代码、/sdcard/Music/。

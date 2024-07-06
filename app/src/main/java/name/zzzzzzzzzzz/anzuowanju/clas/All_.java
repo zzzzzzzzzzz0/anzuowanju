@@ -342,9 +342,9 @@ public class All_ {
                         Dlg_.dlg__(Zhuanping_.item__(), false, i_.activity__(), Zhuanping_.dlg_click_);
                     return null;
                 case export:
-                    return new String[]{FileOp_.copydir__(getContext().getFilesDir(), i_.export_dir__())};
+                    return new String[]{FileOp_.copydir__(getContext().getFilesDir(), i_.export_dir__(true))};
                 case import1: {
-                    String[] ret = new String[]{FileOp_.copydir__(i_.export_dir__(), getContext().getFilesDir())};
+                    String[] ret = new String[]{FileOp_.copydir__(i_.export_dir__(false), getContext().getFilesDir())};
                     new SndMsg_(m);
                     return ret;
                 }
@@ -584,7 +584,7 @@ public class All_ {
                     showdesktop__();
                     return null;
                 case "导出目录":
-                    return new String[]{i_.export_dir__().getAbsolutePath()};
+                    return new String[]{i_.export_dir__(false).getAbsolutePath()};
                 case "快捷方式":
                     return Shortcut_.shortcut__(a, i_);
                 case "毕后": {
