@@ -109,10 +109,15 @@ public class Cang_ {
             System.out.println(err + " " + url);
             return err;
         }
-        String code2 = "链“" + (no_id ? url : ub.parse__(url, true, zs, tag_) + ub.url2__(wv));
+        String flag = "链“";
+        String code2 = flag + (no_id ? url : ub.parse__(url, true, zs, tag_) + ub.url2__(wv));
         if(ub.file__() == null) {
-            title = title.replace("“", " ")
-                    .replace("”", " ");
+            title = title
+                    .replace('“', '"')
+                    .replace('”', '"')
+                    .replace("‘", "'")
+                    .replace("’", "'")
+                    .replace("。", ". ");
             code2 += "”、“" + title;
             if(ub.adblock__())
                 code2 += " (ad";/*<img src=adblock.png>*/
@@ -124,7 +129,7 @@ public class Cang_ {
             int i = no_id ? -1 : s.indexOf(id2);
             for (; ; ) {
                 if (i >= 0) {
-                    int i2 = s.lastIndexOf("链", i);
+                    int i2 = s.lastIndexOf(flag, i);
                     if (i2 > 0) {
                         int i3 = s.indexOf("。", i + id2.length());
                         if (i3 > 0) {
@@ -140,9 +145,9 @@ public class Cang_ {
                 break;
             }
         } else {
-            int i = s.indexOf("开链");
+            int i = s.indexOf("开" + flag);
             if(i < 0)
-                i = s.indexOf("开爽链");
+                i = s.indexOf("开爽" + flag);
             int i3 = s.indexOf("。", i);
             s = s.substring(0, i) + "开" + code2 + s.substring(i3);
         }
