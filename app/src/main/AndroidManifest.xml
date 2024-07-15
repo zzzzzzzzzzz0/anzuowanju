@@ -71,12 +71,12 @@
             android:name="com.hello.hellolight.hellolight___" android:screenOrientation="portrait">
         </activity>
 
-        <receiver android:name=".clas.AutoStart_">
+        <receiver android:name=".clas.AutoStart_" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".clas.AppWidget_text_" android:label="@string/label_appwidget_text">
+        <receiver android:name=".clas.AppWidget_text_" android:label="@string/label_appwidget_text" android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name=".appwidget_text_click" />
@@ -87,7 +87,8 @@
                 android:resource="@xml/app_widget__info" />
         </receiver>
         <receiver android:name=".clas.DeviceAdmin_"
-            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            android:permission="android.permission.BIND_DEVICE_ADMIN"
+            android:exported="true">
             <meta-data
                 android:name="android.app.device_admin"
                 android:resource="@xml/device_admin" />

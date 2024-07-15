@@ -502,6 +502,8 @@ public class All_ {
                 case "应用版本号":
                     return new String[]{String.valueOf(getContext().getPackageManager()
                             .getPackageInfo(i_.pkg_name__(), 0).versionCode)};
+                case "目标版本号":
+                    return new String[]{String.valueOf(getContext().getApplicationInfo().targetSdkVersion)};
                 case "start":
                     return start__(a, qv_up, resource);
                 case "下载":
