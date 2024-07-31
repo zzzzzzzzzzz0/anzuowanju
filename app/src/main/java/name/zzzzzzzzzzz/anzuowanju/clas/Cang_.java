@@ -65,7 +65,7 @@ public class Cang_ {
             return "";
         String url = wv.getUrl();
         if (ub.id_ == 0) {
-            if(ub.file__() == null && !add)
+            if(!ub.adblock__() && !add)
                 return "";
             ub.id_ = wv.hashCode(); //System.currentTimeMillis()
         }
@@ -74,6 +74,7 @@ public class Cang_ {
         boolean bad = false;
         switch (title) {
             case "301 Moved Permanently":
+            case "502 Bad Gateway":
             case "网页无法打开":
             case "":
                 bad = true;
@@ -109,8 +110,7 @@ public class Cang_ {
             System.out.println(err + " " + url);
             return err;
         }
-        String flag = "链“";
-        String code2 = flag + (no_id ? url : ub.parse__(url, true, zs, tag_) + ub.url2__(wv));
+        String code2 = flag_ + (no_id ? url : ub.parse__(url, true, zs, tag_) + ub.url2__(wv));
         if(ub.file__() == null) {
             title = title
                     .replace('“', '"')
@@ -126,33 +126,51 @@ public class Cang_ {
         String filename = ub.file__() != null ? ub.file__() : cang_zs_;
         String s = fo_.read__(filename);
         if(ub.file__() == null) {
-            int i = no_id ? -1 : s.indexOf(id2);
-            for (; ; ) {
-                if (i >= 0) {
-                    int i2 = s.lastIndexOf(flag, i);
-                    if (i2 > 0) {
-                        int i3 = s.indexOf("。", i + id2.length());
-                        if (i3 > 0) {
-                            String s1 = s.substring(0, i2);
-                            if(ub.adblock__() && s1.endsWith("爽"))
-                                s1 = s1.substring(0, s1.length() - 1);
-                            s = s1 + code2 + s.substring(i3);
+            if(!no_id) {
+                for (; ; ) {
+                    int i = s.indexOf(id2);
+                    if (i >= 0) {
+                        String[] a = get__(i, id2.length(), s, ub.adblock__());
+                        if(a != null) {
+                            s = a[0] + code2 + a[1];
                             break;
                         }
                     }
+                    i = s.indexOf(url);
+                    if (i >= 0) {
+                        String[] a = get__(i, url.length(), s, ub.adblock__());
+                        if(a != null) {
+                            s = a[0] + code2 + a[1];
+                            break;
+                        }
+                    }
+                    s += "\n加" + (shuang ? "爽" : "") + code2 + "。";
+                    break;
                 }
-                s += "\n加" + (shuang ? "爽" : "") + code2 + "。";
-                break;
             }
         } else {
-            int i = s.indexOf("开" + flag);
+            int i = s.indexOf("开" + flag_);
             if(i < 0)
-                i = s.indexOf("开爽" + flag);
+                i = s.indexOf("开爽" + flag_);
             int i3 = s.indexOf("。", i);
             s = s.substring(0, i) + "开" + code2 + s.substring(i3);
         }
         //System.out.println(s);
         fo_.write__(s, filename);
         return "";
+    }
+    final String flag_ = "链“";
+    String[] get__(int i, int skip, String s, boolean adblock) {
+        int i2 = s.lastIndexOf(flag_, i);
+        if (i2 > 0) {
+            int i3 = s.indexOf("。", i + skip);
+            if (i3 > 0) {
+                String s1 = s.substring(0, i2);
+                if(adblock && s1.endsWith("爽"))
+                    s1 = s1.substring(0, s1.length() - 1);
+                return new String[] {s1, s.substring(i3)};
+            }
+        }
+        return null;
     }
 }
